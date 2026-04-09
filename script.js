@@ -1,4 +1,5 @@
-const TARGET_DATE = new Date(2026, 3, 28, 9, 0, 0).getTime();
+// Apr 28, 2026 09:00 in Central Europe (Europe/Copenhagen) is 07:00 UTC.
+const TARGET_DATE = Date.UTC(2026, 3, 28, 7, 0, 0);
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
