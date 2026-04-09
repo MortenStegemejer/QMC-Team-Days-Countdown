@@ -4,7 +4,6 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
-const statusEl = document.getElementById("status");
 
 function pad(number) {
   return String(number).padStart(2, "0");
@@ -19,7 +18,6 @@ function updateCountdown() {
     hoursEl.textContent = "00";
     minutesEl.textContent = "00";
     secondsEl.textContent = "00";
-    statusEl.textContent = "It is 9:00 AM on April 28.";
     return false;
   }
 
